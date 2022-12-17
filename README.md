@@ -3,8 +3,10 @@
 Scripts, die mein Leben vereinfachen
 
 ## Inhalt
-- ghdl.sh | Ein Script, das eine VHDL Datei bekommt und anschließend, die zugehörige Testbench ausertet
 
+- flac-remover.sh | Ein Script, das alle .flac Dateien in einem gegebenen Ordner löscht
+- flac-to-mp3.sh | Ein Script, das alle .flac Dateien in einem Order, zu .mp3 konvertiert
+- ghdl.sh | Ein Script, das eine VHDL Datei bekommt und anschließend, die zugehörige Testbench ausertet
 - jpg-to-pdf-mass.sh | Ein Script, das jede JPG im aktuellen Ordner nimmt und eine PDF, zurück gibt, die alle JPG's in alphabetischer Reihenfolge enthält
 
 ## Quellen
