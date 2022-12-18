@@ -20,9 +20,7 @@ else
         bitrate=$3
 fi
 
-if [ -z $outdir ]; then
-	mkdir -p $outdir
-fi
+mkdir -p $outdir
 
 for flac in "$indir"/*.flac; do
 	filename=$(basename "$flac" .flac)
