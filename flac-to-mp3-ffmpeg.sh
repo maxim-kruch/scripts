@@ -21,10 +21,9 @@ else
         bitrate+="k"
 fi
 
-echo Bitrate: $bitrate
-
 for i in $indir/*.flac; do
-	ffmpeg -i "$i" "${i%.*}.mp3" -codec:a libmp3lame -b:a $bitrate
+	echo ffmpeg -i "$i" -codec:a libmp3lame -b:a $bitrate "${i%.*}.mp3"
+	ffmpeg -i "$i" -codec:a libmp3lame -b:a $bitrate "${i%.*}.mp3"
 done
 
 mkdir -p $outdir
