@@ -8,11 +8,11 @@ else
 	dir=$1
 fi
 
-if [ -z $2 ]; then
-	name="{trackNumber} - {artist} {title}"
-else
-	name=$2
-fi
+#if [ -z $2 ]; then
+#	name="{trackNumber} - {title} - {artist}"
+#else
+#	name=$2
+#fi
 
-echo spotrec -m -o $dir -c -a -p $name
-spotrec -m -o $dir -c -a -p $name
+echo spotrec -m -a -c -o $dir -p "{trackNumber} - {title} - {artist}"
+spotrec -m -a -c -o $dir -p "{trackNumber} - {title} - {artist}"
