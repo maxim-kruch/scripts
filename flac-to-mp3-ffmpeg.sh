@@ -18,7 +18,6 @@ if [ -z $3 ]; then
         bitrate=192k
 else
         bitrate=$3
-        bitrate+="k"
 fi
 
 for i in $indir/*.flac; do
